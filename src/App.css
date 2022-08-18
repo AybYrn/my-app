@@ -14,7 +14,17 @@ nav{
   list-style: none;
   display: flex;
   color: white;
-  padding: 5px;
+}
+
+.toggle--container{
+  display: flex;
+  align-items: center;
+  color : white;
+  font-size: 10px;
+  margin-left: 20px;
+  justify-content: space-between;
+  width: 150px;
+  height: 14px;
 }
 
 .switch {
@@ -22,6 +32,7 @@ nav{
   display: inline-block;
   width: 25px;
   height: 14px;
+  margin: 0 5px 0;
 }
 
 .switch input { 
@@ -142,4 +153,9 @@ input:checked + .slider:before {
 .foot{
   background-color: orange;
   margin-top:47px;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
 }
