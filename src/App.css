@@ -6,19 +6,24 @@
   font-style: normal;
 }
 
-header{
+.bold{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header{
   background-color: #21222A;
   display: flex;
   align-items: center;
   height: 91px;
 }
 
-header img{
+.header img{
   position: absolute;
   left: 20px;
 }
 
-nav{
+.header nav{
   list-style: none;
   display: flex;
   color: white;
@@ -87,15 +92,6 @@ nav{
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: rgb(221, 221, 221);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #4733ab;
-}
-
-
 input:checked + .slider:after {
   -webkit-transform: translateX(11px);
   -ms-transform: translateX(11px);
@@ -124,7 +120,7 @@ input:checked + .slider:before {
   background-color: #21222A;
   color: white;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   background-image: url(./mainlogo.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -145,51 +141,43 @@ input:checked + .slider:before {
   margin-right: 20px;
 }
 
-.mainlogo{
-  width: 263px;
-  height: 263px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.main h1{
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-left: 27px;
-}
-
-.main ol li{
-  color: white;
-  list-style: none;
-  padding-block: 10px;
-}
-
-.main ol li svg{
-  padding-right: 14px;
-}
-
 .foot{
   background-color: orange;
   margin-top:47px;
 }
 
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
 header.light{
   color: black;
   background-color: white;
-  /* box shadow */
+  display: flex;
+  align-items: center;
   box-shadow: 0px 0px 5px rgba(113, 113, 113, 0.632);
+  height: 91px;
+}
+
+div.light{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./mainlogo.svg);
+  /* filter: brightness(1) sepia(0) hue-rotate(180deg) saturate(4); */
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.light img{
+  position: absolute;
+  left: 20px;
 }
 
 .light nav {
-  color: black;
-}
+  /* color: black; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 200px;
+  height: 91px;
+}  
 
 .light h1{
   margin-left: 20px;
@@ -209,3 +197,4 @@ header.light{
 .light .toggle--container{
   color: black;
 }
+
