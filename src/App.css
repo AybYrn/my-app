@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+*{
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
 header{
   background-color: #21222A;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 91px;
+}
+
+header img{
+  position: absolute;
+  left: 20px;
 }
 
 nav{
   list-style: none;
   display: flex;
   color: white;
+  position: absolute;
+  right: 200px;
 }
 
 .toggle--container{
@@ -21,8 +31,8 @@ nav{
   align-items: center;
   color : white;
   font-size: 10px;
-  margin-left: 20px;
-  justify-content: space-between;
+  position: absolute;
+  right: 20px;
   width: 150px;
   height: 14px;
 }
@@ -110,19 +120,28 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.main{
-  background-color: #282D35;
-  width: 550px;
-  height: 459px;
-  margin: 0 auto;
-  font-family: 'Inter';
-  font-style: normal;
-}
-
 .maincontent{
+  background-color: #21222A;
+  color: white;
+  width: 100%;
+  height: 400px;
   background-image: url(./mainlogo.svg);
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.maincontent h1{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.maincontent li{
+  list-style: none;
+  padding: 10px;
+}
+
+.maincontent li svg{
+  margin-right: 20px;
 }
 
 .mainlogo{
@@ -158,4 +177,9 @@ input:checked + .slider:before {
 .light-mode {
   background-color: white;
   color: black;
+}
+
+.light{
+  color: black;
+  background-color: white;
 }

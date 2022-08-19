@@ -1,13 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
 
-export default function Header() {
-  function handleClick(){
-    var element = document.body;
-    element.classList.toggle("light-mode");
-  }
+export default function Header(props) {
   return (
-    <header>
+    <header className={props.lightMode ? "light" : ""}>
       <img src={logo} alt="Logo"></img>
       <nav>
         <ul>Home</ul>
@@ -17,8 +13,8 @@ export default function Header() {
       <div className="toggle--container">
         <span>Light</span>
         <label className="switch">
-          <input type="checkbox" onClick={handleClick} />
-          <span className="slider round" ></span>
+          <input type="checkbox"/>
+          <span className="slider round" onClick={props.toggleDarkMode}></span>
         </label>
         <span>Dark</span>
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function MainConent() {
+export default function MainConent(props) {
+  console.log(props)
   return (
-    <div className="maincontent">
+    <div className={props.lightMode ? "light" : "maincontent"}>
       <h1>Fun Facts About React</h1>
       <ol>
         <li>
