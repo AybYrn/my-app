@@ -133,6 +133,7 @@ input:checked + .slider:before {
 .maincontent h1{
   margin-left: 20px;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .maincontent li{
@@ -179,7 +180,32 @@ input:checked + .slider:before {
   color: black;
 }
 
-.light{
+header.light{
   color: black;
   background-color: white;
+  /* box shadow */
+  box-shadow: 0px 0px 5px rgba(113, 113, 113, 0.632);
+}
+
+.light nav {
+  color: black;
+}
+
+.light h1{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.light li{
+  list-style: none;
+  padding: 10px;
+}
+
+.light li svg{
+  margin-right: 20px;
+}
+
+.light .toggle--container{
+  color: black;
 }
